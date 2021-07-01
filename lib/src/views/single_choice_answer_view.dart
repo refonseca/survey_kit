@@ -58,7 +58,7 @@ class _SingleChoiceAnswerViewState extends State<SingleChoiceAnswerView> {
         padding: const EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
           children: [
-            Padding(
+            widget.questionStep.text.isNotEmpty ? Padding(
               padding: const EdgeInsets.only(bottom: 32.0),
               child: Text(
                 widget.questionStep.text,
@@ -67,7 +67,7 @@ class _SingleChoiceAnswerViewState extends State<SingleChoiceAnswerView> {
                 ),
                 textAlign: TextAlign.center,
               ),
-            ),
+            ) : Container(),
             Column(
               children: [
                 Divider(

@@ -61,7 +61,7 @@ class StepView extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: TextButton(
             child: Text(
-              'Cancel',
+              'Cancelar',
               style: TextStyle(
                 color: Theme.of(context).primaryColor,
               ),
@@ -88,7 +88,7 @@ class StepView extends StatelessWidget {
           : Container(),
       trailing: GestureDetector(
         child: Text(
-          'Cancel',
+          'Cancelar',
           style: TextStyle(
             color: Theme.of(context).primaryColor,
           ),
